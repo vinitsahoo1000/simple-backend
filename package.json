@@ -1,9 +1,10 @@
 {
   "name": "simple-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "tsc -b && node dist/index.js"
+  "build": "tsc -b",
+  "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
+    "@types/node": "^22.13.4",
     "typescript": "^5.7.3"
   }
 }
