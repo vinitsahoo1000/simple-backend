@@ -2,7 +2,7 @@ import express from "express"
 import cors from "cors"
 import { mainRouter } from "./routes";
 
-const port = process.env.PORT || 8080;
+const port = Number(process.env.PORT) || 8080;
 const app = express();
 
 app.use(cors())
