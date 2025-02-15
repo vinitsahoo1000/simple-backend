@@ -10,6 +10,6 @@ app.use(express.json())
 
 app.use('/api/v1',mainRouter)
 
-app.listen(port,()=>{
+app.listen(port, "0.0.0.0" ,()=>{
     console.log(`server running on  port ${port}`)
 })
